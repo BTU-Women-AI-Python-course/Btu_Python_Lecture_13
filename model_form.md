@@ -78,6 +78,13 @@ Create a template `user_profile.html` to render the form.
 </html>
 ```
 
+**csrf token**
+
+The `{% csrf_token %}` tag is used in Django templates to include a CSRF (Cross-Site Request Forgery) token in the form. This token is a security measure that helps protect your website from CSRF attacks.
+
+When a user submits a form, the CSRF token included in the form is sent back to the server. Django then checks this token to ensure that the form submission is coming from a trusted source, not from a potentially malicious site. If the token is missing or incorrect, Django will reject the form submission, thereby preventing unauthorized actions.
+
+
 5. **Add a URL Pattern**
 
 Add a URL pattern to `urls.py` to route requests to your view.
