@@ -5,6 +5,11 @@
 - **Model Form** - https://docs.djangoproject.com/en/5.1/topics/forms/modelforms/#modelform
 - **Model Field Custom validation** - https://docs.djangoproject.com/en/5.1/ref/validators/
 
+## Additional sources to use
+
+- **Contact Form** - https://github.com/BTU-Women-AI-Python-course/Btu_Python_Lecture_13/blob/main/sources/contact_form.html
+- **Success Page** - https://github.com/BTU-Women-AI-Python-course/Btu_Python_Lecture_13/blob/main/sources/success.html
+
 ## 📚 Task: Add a Form and Validation to Your Project
 
 ### 1. Create a Simple Form:
