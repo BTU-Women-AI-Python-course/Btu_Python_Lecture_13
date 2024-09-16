@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission Successful</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .success-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 80%; 
+            max-width: 350px; 
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #4c4c4c;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #4c4c4c;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: #a0c4ff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <h1>Thank You!</h1>
+        <p>Your message has been successfully sent.</p>
+        <a href="{% url 'product_form' %}">Return to Contact Form</a>
+        <!-- Replace with your actual URL or path if necessary -->
+    </div>
+</body>
+</html>
