@@ -36,7 +36,7 @@ class ProductAdmin(ImportExportModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
     fieldsets = (
         ('Main Info', {
-            'fields': ('title', 'slug', 'price', 'active', 'brand')
+            'fields': ('title', 'slug', 'price', 'active', 'brand', 'image')
         }),
         ('Additional Info', {
             'fields': ('description', 'categories', 'tags')

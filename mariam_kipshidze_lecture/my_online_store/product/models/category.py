@@ -5,6 +5,7 @@ from django.utils.translation import gettext_lazy as _
 class Category(models.Model):
     title = models.CharField(verbose_name=_('Title'), max_length=255)
     order = models.PositiveSmallIntegerField(verbose_name=_('Order'))
+    image = models.ImageField(verbose_name=_('Image'), upload_to='category', blank=True, null=True)
 
     def __str__(self):
         return f'Category name {self.title}, order: {self.order}'
