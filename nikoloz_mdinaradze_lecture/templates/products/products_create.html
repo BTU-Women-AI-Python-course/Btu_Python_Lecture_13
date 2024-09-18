@@ -2,19 +2,8 @@
 {% block content %}
     <h1>Product Create Form</h1>
     <form method="POST">
-    {% csrf_token %}
-        <label for="name">Name: </label>
-        <input type="text" id="name" name="name" required><br>
-
-        <label for="description"> Description: </label>
-        <textarea id="description" name="description" required></textarea><br>
-
-        <label for="price">Price: </label>
-        <input type="number" id="price" required name="price"><br>
-
-        <label for="category">Category: </label>
-        <input type="text" id="category" name="category"><br>
-
-        <button type="submit">Create</button>
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Create Form</button>
     </form>
 {% endblock %}
